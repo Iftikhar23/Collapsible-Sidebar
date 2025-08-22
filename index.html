@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <header>
+        <button class="toggle" onclick="openSidebar()">☰</button>
+      <p>Hafza's Portfolio</p>
+      <ul class="main-com">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+      </ul>
+    </header>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" onclick="closeSidebar()" id="close">x</a>
+      <a href="#"><p>FAQ</p> <i class="fa-solid fa-question"></i> </a>
+      <a href="#"><p> Profile</p><i class="fa-solid fa-user"></i></a>
+      <a href="#"><p>Settings</p><i class="fa-solid fa-gear"></i></a>
+    </div>
+
+
+    <main>
+      <section class="content">
+        <h1>Hi, My name is Hafza</h1>
+        <h1>I am a passionate</h1>
+        <h1>Web Developer</h1>
+        <div class="button-div">
+          <button>Download Resume</button>
+          <button>Visit Github</button>
+        </div>
+      </section>
+      <section>
+        <img src="pp.png" alt="man" />
+      </section>
+    </main>
+    <script>
+      function openSidebar(){
+        document.getElementById("mySidebar").style.width="250px";
+      }
+      function closeSidebar(){
+        document.getElementById("mySidebar").style.width="0";
+      }
+    </script>
+  </body>
+</html>

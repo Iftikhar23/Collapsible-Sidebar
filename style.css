@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: blanchedalmond;
+    height: 100vh;
+}
+header{
+    height: 15%;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.toggle {
+    width: 40px;
+    height: 40px;
+    margin-left: 100px;
+    background-color: aliceblue;
+}
+p{
+    
+    font-size: 30px;
+  
+}
+ ul {
+    font-size: 25px;
+    margin-right: 400px;
+    display: flex;
+    gap: 40px;
+}
+
+.main-com li{
+    list-style: none;
+    cursor: pointer;
+}
+.main-com li:hover{
+    color: gray;
+}
+main{
+    display: flex;
+    background-color:#Ffff;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    
+}
+section{
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-top: -100px;
+}
+.content{
+    margin-top: -250px;
+   
+}
+img{
+    margin-left:80px ;
+}
+h1{
+    margin-left: 300px;
+    width: 35%;
+    font-size: 40px;
+    /* background-color: brown; */
+}
+.button-div{
+    margin-top: 20px;
+    margin-left: 300px;
+    width: 35%;
+    display: flex;
+    
+}
+button{
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 50%;
+    cursor: pointer;
+   
+}
+button:hover{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+/* sidebar */
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #222;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+    border: 2px solid white;
+     border-radius: 5px;
+}
+.sidebar a{
+     padding: 10px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+}
+.sidebar a p{
+    font-size: 17px;
+}
+
+ .sidebar a:hover {
+        background: #444;
+      }
+#close a{
+    background-color: #222;
+}
+ #close:hover{
+        background: red;
+      }
+      /* .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+      } */
